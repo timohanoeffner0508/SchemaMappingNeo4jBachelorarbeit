@@ -1,0 +1,37 @@
+<input>
+	<schema>
+		<relations>
+			<relation name="city_copy" tag="T">
+				<attribute name="name" type="string" />
+				<attribute name="id" type="int" />
+				<attribute name="plz" type="int" />
+			</relation>
+			<relation name="city" tag="S">
+				<attribute name="name" type="string" />
+				<attribute name="id" type="int" />
+				<attribute name="plz" type="int" />
+			</relation>
+		</relations>
+		
+		<dependencies>
+			<sttgd>
+				<body>
+					<atom name="city" >
+						<variable name="name" type="V" index="1" />
+						<variable name="id" type="V" index="1" />
+						<variable name="plz" type="V" index="1" />
+					</atom>
+				</body>
+				<head>
+					<atom name="city_copy" >
+						<variable name="city" type="V" index="1" />
+						<variable name="id" type="V" index="1" />
+						<variable name="plz" type="V" index="1" />
+					</atom>
+				</head>
+			</sttgd>
+		</dependencies>
+	</schema>
+	
+	<instance/>
+</input>	

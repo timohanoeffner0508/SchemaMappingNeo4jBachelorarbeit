@@ -1,0 +1,575 @@
+{
+    "Country": [
+        {
+            "id": 0,
+            "properties": {
+                "name": "Germany"
+            },
+            "belongs_to": [
+                "EconomicHub"
+            ]
+        },
+        {
+            "id": 1,
+            "properties": {
+                "name": "USA"
+            },
+            "edges": []
+        },
+        {
+            "id": 2,
+            "properties": {
+                "name": "Austria"
+            },
+            "edges": []
+        },
+        {
+            "id": 3,
+            "properties": {
+                "name": "Swiss"
+            },
+            "edges": []
+        },
+        {
+            "id": 4,
+            "properties": {
+                "name": "Italia"
+            },
+            "edges": []
+        },
+        {
+            "id": 5,
+            "properties": {
+                "name": "France"
+            },
+            "edges": []
+        },
+        {
+            "id": 6,
+            "properties": {
+                "name": "Great Britain"
+            },
+            "edges": []
+        },
+        {
+            "id": 7,
+            "properties": {
+                "name": "Canada"
+            },
+            "edges": []
+        }
+    ],
+    "City": [
+        {
+            "id": 8,
+            "properties": {
+                "name": "Munich"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 8,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 4,
+                        "temp": 2.8,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "properties": {
+                "name": "Vienna"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 10,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 6,
+                        "temp": -0.5,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "properties": {
+                "name": "Delsberg"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 11,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 8,
+                        "temp": 0.9,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "properties": {
+                "name": "Roma"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 12,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 5,
+                        "temp": 7.2,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "properties": {
+                "name": "Paris"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 13,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 7,
+                        "temp": 5,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "properties": {
+                "name": "Landshut"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 15,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 1,
+                        "temp": 5.5,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "properties": {
+                "name": "Regensburg"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 16,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 2,
+                        "temp": 4.0,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "properties": {
+                "name": "Passau"
+            },
+            "edges": [
+                {
+                    "type": "data",
+                    "target_node": 17,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "id_d": 3,
+                        "temp": 1.0,
+                        "month": "January"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "properties": {
+                "name": "London"
+            },
+            "edges": []
+        },
+        {
+            "id": 9,
+            "properties": {
+                "name": "New York City"
+            },
+            "belongs_to": [
+                "EconomicHub"
+            ]
+        },
+        {
+            "id": 28,
+            "properties": {
+                "name": "Frankfurt am Main"
+            },
+            "belongs_to": [
+                "EconomicHub"
+            ]
+        }
+    ],
+    "State": [
+        {
+            "id": 18,
+            "properties": {
+                "name": "Bavaria"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 0,
+                    "target_label": [
+                        "EconomicHub",
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 1
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 8,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": true,
+                        "id_h": 1
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 15,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": false,
+                        "id_h": 9
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 16,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": false,
+                        "id_h": 10
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 17,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": false,
+                        "id_h": 11
+                    }
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "properties": {
+                "name": "New York"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 1,
+                    "target_label": [
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 2
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 9,
+                    "target_label": [
+                        "EconomicHub",
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": true,
+                        "id_h": 2
+                    }
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "properties": {
+                "name": "Tyrol"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 2,
+                    "target_label": [
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 3
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 10,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": false,
+                        "id_h": 3
+                    }
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "properties": {
+                "name": "Jura"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 3,
+                    "target_label": [
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 4
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 11,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": true,
+                        "id_h": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "properties": {
+                "name": "Toskana"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 4,
+                    "target_label": [
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 5
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 12,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": false,
+                        "id_h": 5
+                    }
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "properties": {
+                "name": "Bretagne"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 5,
+                    "target_label": [
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 6
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 13,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": false,
+                        "id_h": 6
+                    }
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "properties": {
+                "name": "England"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 6,
+                    "target_label": [
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 7
+                    }
+                },
+                {
+                    "type": "has",
+                    "target_node": 29,
+                    "target_label": [
+                        "City"
+                    ],
+                    "properties": {
+                        "capital": true,
+                        "id_h": 7
+                    }
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "properties": {
+                "name": "Sachsen"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 0,
+                    "target_label": [
+                        "EconomicHub",
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 8
+                    }
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "properties": {
+                "name": "Hessen"
+            },
+            "edges": [
+                {
+                    "type": "is_in",
+                    "target_node": 0,
+                    "target_label": [
+                        "EconomicHub",
+                        "Country"
+                    ],
+                    "properties": {
+                        "id_is": 9
+                    }
+                }
+            ]
+        }
+    ],
+    "unlabeled": [
+        {
+            "id": 31,
+            "properties": {
+                "name": "Test"
+            },
+            "edges": []
+        }
+    ],
+    "Supertypes": [
+        {
+            "Supertype": "EconomicHub",
+            "data": [
+                {
+                    "id": 0,
+                    "properties": {
+                        "gdp": 4200000000000
+                    },
+                    "edges": []
+                },
+                {
+                    "id": 9,
+                    "properties": {
+                        "gdp": 1500000000000
+                    },
+                    "edges": []
+                },
+                {
+                    "id": 28,
+                    "properties": {
+                        "gdp": 260000000
+                    },
+                    "edges": [
+                        {
+                            "type": "is_in",
+                            "target_node": 26,
+                            "target_label": [
+                                "State"
+                            ],
+                            "properties": {
+                                "id_is": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

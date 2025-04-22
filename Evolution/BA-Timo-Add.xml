@@ -1,0 +1,35 @@
+<input>
+	<schema>
+		<relations>
+			<relation name="country_new" tag="T">
+				<attribute name="name" type="string" />
+				<attribute name="id" type="int" />
+				<attribute name="population" type="int" />
+			</relation>
+			<relation name="country" tag="S">
+				<attribute name="name" type="string" />
+				<attribute name="id" type="int" />
+			</relation>
+		</relations>
+		
+		<dependencies>
+			<sttgd>
+				<body>
+					<atom name="country" >
+						<variable name="name" type="V" index="1" />
+						<variable name="id" type="V" index="1" />
+					</atom>
+				</body>
+				<head>
+					<atom name="country_new" >
+						<variable name="name" type="V" index="1" />
+						<variable name="id" type="V" index="1" />
+						<variable name="population" type="E" index="1" />
+					</atom>
+				</head>
+			</sttgd>
+		</dependencies>
+	</schema>
+	
+	<instance/>
+</input>	
